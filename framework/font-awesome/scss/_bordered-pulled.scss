@@ -1,0 +1,53 @@
+// ===============================
+// Bordered & Pulled Icon Styling
+// Green Theme + Responsive Touch
+// ===============================
+
+$fa-border-color: #38CA73; // 🌿 Green border color
+
+.#{$fa-css-prefix}-border {
+  padding: 0.25em 0.35em 0.2em;
+  border: solid 0.1em $fa-border-color;
+  border-radius: 0.25em;
+  transition: border-color 0.3s ease;
+
+  // Optional hover enhancement
+  &:hover {
+    border-color: darken($fa-border-color, 10%);
+  }
+}
+
+// Pull left/right (modern float-based layout)
+.#{$fa-css-prefix}-pull-left {
+  float: left;
+  margin-right: 0.5em;
+}
+
+.#{$fa-css-prefix}-pull-right {
+  float: right;
+  margin-left: 0.5em;
+}
+
+// Scoped pull styles for prefixed icons
+.#{$fa-css-prefix} {
+  &.#{$fa-css-prefix}-pull-left {
+    margin-right: 0.5em;
+  }
+
+  &.#{$fa-css-prefix}-pull-right {
+    margin-left: 0.5em;
+  }
+
+  // Backward compatibility (deprecated in 4.4.0)
+  &.pull-left {
+    margin-right: 0.5em;
+  }
+
+  &.pull-right {
+    margin-left: 0.5em;
+  }
+}
+
+// Deprecated legacy classes (still supported for old markup)
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }

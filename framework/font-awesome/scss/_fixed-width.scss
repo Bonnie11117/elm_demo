@@ -1,0 +1,11 @@
+// =====================================
+// Fixed Width Icons (Uniform Alignment)
+// =====================================
+
+.#{$fa-css-prefix}-fw {
+  width: 1.2857em; // equivalent to (18em / 14)
+  text-align: center;
+
+  // Optional: ensures icons align nicely in list items or menus
+  display: inline-block;
+}

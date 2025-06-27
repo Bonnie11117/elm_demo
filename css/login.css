@@ -1,0 +1,135 @@
+/****************** 总容器 ******************/
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f8f9;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/****************** header部分 ******************/
+.wrapper header {
+  width: 100%;
+  height: 12vw;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 4.8vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/****************** 表单部分 ******************/
+.wrapper .form-box {
+  width: 100%;
+  margin-top: 14vw;
+}
+.wrapper .form-box li {
+  box-sizing: border-box;
+  padding: 4vw 3vw 0 3vw;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.wrapper .form-box li .title {
+  flex: 0 0 18vw;
+  font-size: 3.4vw;
+  font-weight: 700;
+  color: #444;
+}
+.wrapper .form-box li .content {
+  flex: 1;
+}
+.wrapper .form-box li .content input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 5vw;
+  font-size: 3.2vw;
+  padding: 1.5vw;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+/****************** 登录按钮 ******************/
+.wrapper .button-login {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5vw 3vw 0 3vw;
+}
+.wrapper .button-login button {
+  width: 100%;
+  height: 10vw;
+  font-size: 4vw;
+  font-weight: 700;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+  transition: background-color 0.3s;
+}
+.wrapper .button-login button:hover {
+  background-color: #43a047;
+}
+
+/****************** 注册按钮 ******************/
+.wrapper .button-register {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4vw 3vw 0 3vw;
+}
+.wrapper .button-register button {
+  width: 100%;
+  height: 10vw;
+  font-size: 4vw;
+  font-weight: 700;
+  color: #666;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+.wrapper .button-register button:hover {
+  background-color: #d5d5d5;
+}
+
+/****************** 底部菜单部分 ******************/
+.wrapper .footer {
+  width: 100%;
+  height: 14vw;
+  border-top: 1px solid #DDD;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+.wrapper .footer li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4CAF50;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.wrapper .footer li:hover {
+  color: #2E7D32;
+}
+.wrapper .footer li p {
+  font-size: 2.8vw;
+}
+.wrapper .footer li i {
+  font-size: 5vw;
+}

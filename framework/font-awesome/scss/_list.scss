@@ -1,0 +1,36 @@
+// Modern Green-Themed List Icons
+.#{$fa-css-prefix}-ul {
+  padding-left: 0;
+  margin-left: $fa-li-width + 0.5em; // extra space for visual comfort
+  list-style-type: none;
+
+  > li {
+    position: relative;
+    padding: 0.6em 0 0.6em 0.2em; // better vertical rhythm
+    font-size: 1.05em;
+    color: #333;
+  }
+}
+
+.#{$fa-css-prefix}-li {
+  position: absolute;
+  left: -$fa-li-width - 0.3em; // extra shift left
+  width: $fa-li-width + 0.3em;
+  top: 0.3em;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50; // green bubble
+  border-radius: 50%;
+  font-size: 0.9em;
+  height: 1.6em;
+  width: 1.6em;
+  line-height: 1.6em;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // soft shadow for depth
+  transition: background-color 0.3s ease;
+
+  &.#{$fa-css-prefix}-lg {
+    left: -$fa-li-width + (4em / 14);
+    font-size: 1.2em;
+  }
+}

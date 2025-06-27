@@ -1,0 +1,13 @@
+@import "variables";         // Global variables like colors, sizes, paths
+@import "mixins";            // Helper mixins for icons, flipping, rotating
+@import "path";              // @font-face and path setup
+@import "core";              // Base `.fa` class
+@import "larger";            // Icon size classes like `.fa-2x`
+@import "fixed-width";       // `.fa-fw` (fixed-width) icons
+@import "list";              // `.fa-ul` and `.fa-li`
+@import "bordered-pulled";   // `.fa-border`, `.fa-pull-left/right`
+@import "animated";          // `.fa-spin`, `.fa-pulse`
+@import "rotated-flipped";   // `.fa-rotate-90`, `.fa-flip-horizontal`, etc.
+@import "stacked";           // `.fa-stack` for stacking icons
+@import "icons";             // All icon definitions (e.g. `.fa-user`, `.fa-home`)
+@import "screen-reader";     // `.sr-only` for accessibility

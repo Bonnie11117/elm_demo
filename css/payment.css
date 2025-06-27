@@ -1,0 +1,159 @@
+/****************** 总容器 ******************/
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f9fbfc;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/****************** header部分 ******************/
+.wrapper header {
+  width: 100%;
+  height: 12vw;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 4.8vw;
+  font-weight: 600;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/****************** 订单信息部分 ******************/
+.wrapper h3 {
+  margin-top: 12vw;
+  box-sizing: border-box;
+  padding: 4vw 4vw 0;
+  font-size: 4vw;
+  font-weight: 400;
+  color: #777;
+}
+
+.wrapper .order-info {
+  box-sizing: border-box;
+  padding: 4vw;
+  font-size: 4vw;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.wrapper .order-info p:last-child {
+  color: orangered;
+  font-weight: 600;
+}
+
+/****************** 订单明细部分 ******************/
+.wrapper .order-detailet {
+  width: 100%;
+  background: #fff;
+}
+
+.wrapper .order-detailet li {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3vw 4vw;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .order-detailet li p {
+  font-size: 3.5vw;
+  color: #555;
+}
+
+/****************** 支付方式部分 ******************/
+.wrapper .payment-type {
+  width: 100%;
+  background: #fff;
+  margin-top: 3vw;
+}
+
+.wrapper .payment-type li {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4vw;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .payment-type li img {
+  width: 33vw;
+  height: auto;
+  max-height: 8.9vw;
+}
+
+.wrapper .payment-type li .fa-check-circle {
+  font-size: 5vw;
+  color: #38CA73;
+}
+
+/****************** 支付按钮 ******************/
+.wrapper .payment-button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4vw;
+  background: #fff;
+}
+
+.wrapper .payment-button button {
+  width: 100%;
+  height: 10vw;
+  font-size: 4vw;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #38CA73;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(56, 202, 115, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.wrapper .payment-button button:hover {
+  background-color: #2dad5f;
+}
+
+/****************** 底部菜单部分 ******************/
+.wrapper .footer {
+  width: 100%;
+  height: 14vw;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper .footer li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  user-select: none;
+  cursor: pointer;
+}
+
+.wrapper .footer li p {
+  font-size: 2.8vw;
+}
+
+.wrapper .footer li i {
+  font-size: 5vw;
+}

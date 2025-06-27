@@ -1,0 +1,283 @@
+/****************** 总容器 ******************/
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f9fa;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/****************** header ******************/
+.wrapper header {
+  width: 100%;
+  height: 12vw;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.wrapper header .icon-location-box {
+  width: 3.5vw;
+  height: 3.5vw;
+  margin: 0 1vw 0 3vw;
+}
+.wrapper header .location-text {
+  font-size: 4.5vw;
+  font-weight: 700;
+}
+.wrapper header .location-text .fa-caret-down {
+  margin-left: 1vw;
+}
+
+/****************** search ******************/
+.wrapper .search {
+  width: 100%;
+  height: 13vw;
+}
+.wrapper .search .search-fixed-top {
+  width: 100%;
+  height: 13vw;
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .search .search-fixed-top .search-box {
+  width: 90%;
+  height: 9vw;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 3.5vw;
+  color: #aaa;
+  user-select: none;
+  padding-left: 3vw;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.wrapper .search .search-fixed-top .search-box .fa-search {
+  margin-right: 1vw;
+}
+
+/****************** 点餐分类部分 ******************/
+.wrapper .foodtype {
+  width: 100%;
+  height: 48vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.wrapper .foodtype li {
+  width: 18vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+.wrapper .foodtype li img {
+  width: 12vw;
+  height: 10.3vw;
+  border-radius: 8px;
+}
+.wrapper .foodtype li p {
+  font-size: 3.2vw;
+  color: #666;
+}
+
+/****************** 横幅广告部分 ******************/
+.wrapper .banner {
+  width: 95%;
+  margin: 2vw auto;
+  height: 29vw;
+  background-image: url(../img/index_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 2vw 6vw;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.wrapper .banner h3 {
+  font-size: 4.2vw;
+  margin-bottom: 1.2vw;
+}
+.wrapper .banner p {
+  font-size: 3.4vw;
+  color: #444;
+  margin-bottom: 2.4vw;
+}
+.wrapper .banner a {
+  font-size: 3vw;
+  color: #388E3C;
+  font-weight: 700;
+}
+
+/****************** 超级会员部分 ******************/
+.wrapper .supermember {
+  width: 95%;
+  margin: 1.5vw auto;
+  height: 11.5vw;
+  background-color: #E8F5E9;
+  border-radius: 10px;
+  color: #388E3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .supermember .left {
+  display: flex;
+  align-items: center;
+  margin-left: 4vw;
+}
+.wrapper .supermember .left img {
+  width: 6vw;
+  height: 6vw;
+  margin-right: 2vw;
+}
+.wrapper .supermember .left h3 {
+  font-size: 4vw;
+  margin-right: 2vw;
+}
+.wrapper .supermember .left p {
+  font-size: 3vw;
+}
+.wrapper .supermember .right {
+  font-size: 3vw;
+  margin-right: 4vw;
+  cursor: pointer;
+}
+
+/****************** 推荐商家部分 ******************/
+.wrapper .recommend {
+  width: 100%;
+  height: 14vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .recommend .recommend-line {
+  width: 6vw;
+  height: 0.2vw;
+  background-color: #888;
+}
+.wrapper .recommend p {
+  font-size: 4vw;
+  margin: 0 4vw;
+}
+
+/****************** 推荐方式部分 ******************/
+.wrapper .recommendtype {
+  width: 100%;
+  height: 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper .recommendtype li {
+  font-size: 3.5vw;
+  color: #555;
+}
+
+/****************** 推荐商家列表部分 ******************/
+.wrapper .business {
+  width: 100%;
+  margin-bottom: 14vw;
+}
+.wrapper .business li {
+  width: 100%;
+  padding: 2.5vw;
+  background: white;
+  border-bottom: solid 1px #EEE;
+  display: flex;
+}
+.wrapper .business li img {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.wrapper .business li .business-info {
+  flex: 1;
+  padding-left: 3vw;
+}
+.business-info-h {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+.business-info-h h3 {
+  font-size: 4vw;
+  color: #333;
+}
+.business-info-like {
+  background-color: #66bb6a;
+  color: white;
+  border-radius: 4px;
+  padding: 0 1vw;
+  font-size: 3.2vw;
+}
+.business-info-star,
+.business-info-delivery,
+.business-info-explain,
+.business-info-promotion {
+  font-size: 3vw;
+  color: #666;
+  margin-bottom: 2vw;
+}
+.business-info-star .fa-star {
+  color: #FFCA28;
+  margin-right: 1vw;
+}
+.business-info-star-right {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 2.4vw;
+  border-radius: 6px;
+  padding: 0 1vw;
+}
+.business-info-promotion-left-incon {
+  width: 4vw;
+  height: 4vw;
+  background-color: #4CAF50;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************** 底部菜单部分 ******************/
+.wrapper .footer {
+  width: 100%;
+  height: 14vw;
+  border-top: solid 1px #DDD;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}
+.wrapper .footer li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4CAF50;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.wrapper .footer li:hover {
+  color: #2E7D32;
+}
+.wrapper .footer li p {
+  font-size: 2.8vw;
+}
+.wrapper .footer li i {
+  font-size: 5vw;
+}

@@ -1,0 +1,26 @@
+// ===============================
+// Base Font Awesome Icon Class
+// ===============================
+
+.#{$fa-css-prefix} {
+  display: inline-block;
+
+  // Compact font declaration
+  font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome;
+
+  // Reset font-size to inherit from parent context
+  font-size: inherit;
+
+  // Improve font rendering
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Optional: default icon color (commented out for now)
+  // color: #38CA73;
+
+  // Optional hover effect for green theme (uncomment if needed)
+  // &:hover {
+  //   color: darken(#38CA73, 10%);
+  // }
+}

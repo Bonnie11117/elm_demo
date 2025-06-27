@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>饿了么 确认订单</title>
+  <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="framework/reset.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px;
+      text-align: center;
+    }
+    .content {
+      padding: 20px;
+    }
+    .order-item {
+      background: white;
+      padding: 14px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+    }
+    .order-item p {
+      margin: 6px 0;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>确认订单</header>
+  <div class="content">
+    <div class="order-item">
+      <p><strong>店铺：</strong> 万家饺子</p>
+      <p><strong>商品：</strong> 纯肉鲜肉（水饺） x2</p>
+      <p><strong>总价：</strong> ¥30</p>
+    </div>
+    <button class="btn" onclick="location.href='payment.html'">去支付</button>
+  </div>
+</body>
+</html>

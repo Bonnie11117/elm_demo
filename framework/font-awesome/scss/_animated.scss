@@ -1,0 +1,55 @@
+// =============================
+// Spinning & Pulse Animations
+// Green Theme Modern Enhancements
+// =============================
+
+$fa-spin-duration: 2s;
+$fa-pulse-duration: 1s;
+$fa-green-color: #38CA73;
+
+// Standard Spin Animation
+.#{$fa-css-prefix}-spin {
+  animation: fa-spin $fa-spin-duration infinite linear;
+  color: $fa-green-color; // green color enhancement
+}
+
+// Pulse Animation (with steps)
+.#{$fa-css-prefix}-pulse {
+  animation: fa-pulse $fa-pulse-duration infinite steps(8);
+  color: $fa-green-color; // green color enhancement
+}
+
+// Optional: Add a scale-pulse variation
+.#{$fa-css-prefix}-pulse-scale {
+  animation: fa-pulse-scale 1.2s infinite ease-in-out;
+  color: $fa-green-color;
+}
+
+// Keyframes
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+// Optional: Keyframes for scale pulse
+@keyframes fa-pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,37 @@
+// Stacked Icons (Green Theme Enhanced)
+// -------------------------------------
+
+.#{$fa-css-prefix}-stack {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  background-color: transparent; // can be customized
+}
+
+.#{$fa-css-prefix}-stack-1x,
+.#{$fa-css-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.#{$fa-css-prefix}-stack-1x {
+  line-height: inherit;
+  color: #38CA73; // Foreground icon color (green highlight)
+}
+
+.#{$fa-css-prefix}-stack-2x {
+  font-size: 2em;
+  color: #e8f5e9; // Light green background circle color
+}
+
+.#{$fa-css-prefix}-inverse {
+  color: #fff; // Pure white for contrast — used on top of colored bg
+  // Alternatively: color: $fa-inverse; if using variable system
+}

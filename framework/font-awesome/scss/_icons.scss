@@ -1,0 +1,40 @@
+/* Base Reset */
+html,body,div,span,h1,h2,h3,h4,h5,h6,ul,ol,li,p{margin:0;padding:0;}html,body{width:100%;height:100%;font-family:"微软雅黑";}ul,ol{list-style:none;}a{text-decoration:none;}
+
+/* Global Wrapper */
+.wrapper{width:100%;height:100%;}
+
+/* Header */
+.wrapper header{width:100%;height:12vw;background-color:#4CAF50;color:#fff;font-size:4.8vw;position:fixed;left:0;top:0;z-index:1000;display:flex;justify-content:center;align-items:center;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+
+/* Buttons */
+button{border:none;outline:none;border-radius:6px;padding:3vw;font-weight:700;font-size:3.8vw;transition:all 0.3s ease;}button:active{transform:scale(0.98);}
+.button-login button{background-color:#4CAF50;color:#fff;box-shadow:0 4px 6px rgba(0,0,0,0.2);}
+.button-register button{background-color:#E0F2E9;color:#388E3C;border:1px solid #81C784;}
+
+/* Footer */
+.wrapper .footer{width:100%;height:14vw;border-top:1px solid #DDD;background-color:#fff;position:fixed;left:0;bottom:0;display:flex;justify-content:space-around;align-items:center;box-shadow:0 -2px 6px rgba(0,0,0,0.05);}
+.wrapper .footer li{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#999;user-select:none;cursor:pointer;}
+.wrapper .footer li p{font-size:2.8vw;}
+.wrapper .footer li i{font-size:5vw;}
+
+/* Cart Icon */
+.cart-left-icon{background-color:#4CAF50;border-radius:8vw;font-size:7vw;color:#fff;border:solid 1.6vw #388E3C;}
+.cart-left-icon-quantity{background-color:#f44336;color:#fff;border-radius:50%;font-size:3.6vw;}
+
+/* Food Right Buttons */
+.food-right .fa-plus-circle{color:#4CAF50;}
+.food-right .fa-minus-circle{color:#999;}
+
+/* Search Box */
+.search-box{background-color:#fff;border-radius:2px;font-size:3.5vw;color:#AEAEAE;}
+
+/* Location Icon */
+.icon-location{border-radius:50% 50% 50% 0;background:#fff;transform:rotate(-45deg);}
+.icon-location:after{background-color:#4CAF50;}
+
+/* Animation */
+.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear;}
+.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8);}
+@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(359deg);}}
+@keyframes fa-spin{0%{transform:rotate(0deg);}100%{transform:rotate(359deg);}}

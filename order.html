@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>饿了么 确认订单</title>
+
+  <!-- Fonts & Reset -->
+  <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="framework/reset.css" rel="stylesheet" />
+
+  <!-- Local CSS -->
+  <link href="css/order.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --main-color: #4CAF50;
+      --gray-light: #f6f8f9;
+      --text-dark: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--gray-light);
+    }
+
+    .wrapper {
+      max-width: 600px;
+      margin: auto;
+      padding-bottom: 80px;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 18px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .order-info {
+      background: white;
+      padding: 16px;
+      margin-top: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .order-info h5 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: var(--text-dark);
+    }
+
+    .order-info-address {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .order-info-address p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .order-info i {
+      color: #bbb;
+    }
+
+    .order-info > p {
+      font-size: 14px;
+      color: #777;
+      margin-top: 4px;
+    }
+
+    h3 {
+      padding: 16px;
+      margin: 0;
+      font-size: 18px;
+      background: white;
+      color: var(--text-dark);
+      border-top: 1px solid #eee;
+    }
+
+    .order-detailed {
+      list-style: none;
+      margin: 0;
+      padding: 0 16px;
+      background: white;
+    }
+
+    .order-detailed li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+    }
+
+    .order-detailed-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .order-detailed-left img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .order-detailed-left p {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .order-detailed li p:last-child {
+      font-size: 15px;
+      color: #333;
+    }
+
+    .order-deliveryfee {
+      background: white;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    .total {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border-top: 1px solid #ddd;
+      padding: 14px 20px;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .total-left {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--main-color);
+    }
+
+    .total-right {
+      background-color: var(--main-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .total-right:hover {
+      background-color: #43A047;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>确认订单</header>
+
+    <!-- Order Info -->
+    <div class="order-info">
+      <h5>订单配送至：</h5>
+      <div class="order-info-address">
+        <p>沈阳市浑南区智慧四街1-121号</p>
+        <i class="fa fa-angle-right"></i>
+      </div>
+      <p>习近平先生 13656785432</p>
+    </div>
+
+    <!-- Store Name -->
+    <h3>万家饺子（软件园E18店）</h3>
+
+    <!-- Order Details -->
+    <ul class="order-detailed">
+      <li>
+        <div class="order-detailed-left">
+          <img src="img/sp01.png" alt="纯肉鲜肉水饺">
+          <p>纯肉鲜肉（水饺） x 2</p>
+        </div>
+        <p>¥30</p>
+      </li>
+      <li>
+        <div class="order-detailed-left">
+          <img src="img/sp02.png" alt="玉米鲜肉水饺">
+          <p>玉米鲜肉（水饺） x 1</p>
+        </div>
+        <p>¥16</p>
+      </li>
+    </ul>
+
+    <!-- Delivery Fee -->
+    <div class="order-deliveryfee">
+      <p>配送费</p>
+      <p>¥3</p>
+    </div>
+
+    <!-- Total -->
+    <div class="total">
+      <div class="total-left">¥49</div>
+      <div class="total-right" onclick="location.href='payment.html'">去支付</div>
+    </div>
+  </div>
+</body>
+</html>
